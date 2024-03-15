@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export default function PostDetail(){
     return (
         <>
@@ -13,7 +15,9 @@ export default function PostDetail(){
                     </div>    
                     <div className="post__utils-box">
                         <div className="post__delete">삭제</div>
-                        <div className="post__edit">수정</div>
+                        <div className="post__edit">
+                            <Link to={`/posts/edit`}>수정</Link>
+                        </div>
                     </div>
                     <div className="post__text">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, voluptatem voluptatibus fuga nulla reiciendis illo accusantium voluptates dicta magni tempora quo exercitationem nostrum voluptate neque rerum, sequi delectus odio magnam.
@@ -21,6 +25,5 @@ export default function PostDetail(){
                 </div>
             </div>
         </>
-    )
-   
+    )   
 }
