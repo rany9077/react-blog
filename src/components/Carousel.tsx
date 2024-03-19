@@ -10,7 +10,6 @@ const IMAGE_3_URL =
 export default function Carousel(){
     const [acttiveImage,setActiveImage] = useState(1);
   
-    console.log(acttiveImage)
     return(
         <div>
             <div className="carousel">
