@@ -16,7 +16,9 @@ export interface PostProps {
     email: string;
     summary: string;
     content: string;
-    createdAt: string
+    createdAt: string;
+    updatedAt: string;
+    uid: string;
 }
 
 export default function PostList({hasNavigation = true} : PostListProps){
@@ -63,7 +65,7 @@ export default function PostList({hasNavigation = true} : PostListProps){
                         {post?.email === user?.email && (
                             <div className="post__utils-box">
                                 <div className="post__delete">삭제</div>
-                                <Link to={`/posts/edit${post?.id}`} className="post__edit">수정</Link>
+                                <Link to={`/posts/edit/${post?.id}`} className="post__edit">수정</Link>
                             </div>
                         )}                       
                     </div>

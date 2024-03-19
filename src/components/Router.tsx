@@ -23,7 +23,7 @@ export default function Router({isAuthenticated} : RouterProps) {
             <Route path="/posts" element={<PostList/>}></Route>
             <Route path="/posts/:id" element={<PostDetail/>}></Route>
             <Route path="/posts/new" element={<PostNew/>}></Route>
-            <Route path="/posts/edit" element={<PostEdit/>}></Route>
+            <Route path="/posts/edit/:id" element={<PostEdit/>}></Route>
             <Route path="/profile" element={<ProfilePage/>}></Route>
             <Route path="*" element={<Navigate replace to="/" />}></Route>
           </>

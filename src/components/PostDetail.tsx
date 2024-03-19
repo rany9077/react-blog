@@ -43,12 +43,14 @@ export default function PostDetail(){
                     <div className="post__utils-box">
                         <div className="post__delete" role="presentation" onClick={handleDelete}>삭제</div>
                         <div className="post__edit">
-                            <Link to={`/posts/edit`}>수정</Link>
+                            <Link to={`/posts/edit/${post?.id}`}>수정</Link>
                         </div>
                     </div>
                     <div className="post__text post__text--pre-wrap">{post?.content}</div>
                 </div>
-                ) : <Loader />}               
+                ) : ( 
+                <Loader />
+                )}               
             </div>
         </>
     )   

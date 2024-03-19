@@ -67,8 +67,10 @@ footer a:hover {
   max-width: 680px;
   font-size: 1rem;
   color: #666;
-  cursor: pointer;
   padding: 48px 20px 0px 20px;
+}
+.post__navigation div {
+  cursor: pointer;
 }
 .post__navigation--active {
   color: #111;
