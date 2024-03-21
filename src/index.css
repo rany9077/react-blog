@@ -58,6 +58,11 @@ footer a:focus,
 footer a:hover {
   color: #111
 }
+.footer__theme-btn {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
 
 /* post navigation */
 .post__navigation {
@@ -339,7 +344,7 @@ input:checked + .carousel__slide-container .nav label {
   font-size: 1rem;
   border-radius: 0.3rem;
   border: 1px solid #999;
-  width: 93%;
+  width: 96%;
   max-width: 680px;
 }
 .form textarea {
@@ -349,7 +354,7 @@ input:checked + .carousel__slide-container .nav label {
   line-height: 1.5;
   border-radius: 0.3rem;
   border: 1px solid #999;
-  width: 93%;
+  width: 96%;
   max-width: 680px;
 }
 .form .form__block {
@@ -378,7 +383,9 @@ input:checked + .carousel__slide-container .nav label {
 .form .form__btn--submit:focus {
   background-color: #1945a4;
 }
-
+.form__link {
+  margin-left: 10px;
+}
 .form__error {
   color : #ff0000
 }
@@ -397,4 +404,43 @@ input:checked + .carousel__slide-container .nav label {
   border-radius: 50%;
   z-index: 9999;
   animation: rotation 1s linear infinite;
+}
+
+/* dark mode */
+.white{
+  transition: all .25s linear;
+  background-color: #fff;
+}
+.dark{
+  transition: all .25s linear;
+  background-color: #1d1d1d;
+  min-height: 100vh;
+}
+.dark a, 
+.dark .form label,
+.dark .post__delete,
+.dark .profile__logout,
+.dark .form__title,
+.dark .post__navigation--active,
+.dark .post__title,
+.dark .post__author-name,
+.dark .footer__theme-btn,
+.dark .profile__name {
+  color : #fff
+}
+.dark a:hover,
+.dark a:focus,
+.dark .post__text,
+.dark .post__text--pre-wrap,
+.dark .profile__email,
+.dark .post__date,
+.dark .form__block {
+  color: #f2f2f2;
+} 
+.dark .form__error {
+  color: #ff3535;
+}
+.dark footer,
+.dark header {
+  background-color: #111;
 }
