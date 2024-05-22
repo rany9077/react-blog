@@ -421,6 +421,82 @@ input:checked + .carousel__slide-container .nav label {
   animation: rotation 1s linear infinite;
 }
 
+/* comments */
+.comments {
+  width: 100%;
+}
+.comments__form label {
+  font-weight: 600;
+  display: block;
+  margin: 10px 0 20px;
+}
+.comments__form textarea {
+  min-height: 100px;
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  border: 1px solid #f2f2f2;
+  display: block;
+  width: 100%;
+  max-width: 680px;
+}
+.comments__form .form__block {
+  margin-top: 10px;
+}
+.comments__form .form__btn-submit {
+  width: 100px;
+  height: 36px;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+.form__block-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.comments__form .form__btn-submit:hover,
+.comments__form .form__btn-submit:focus {
+  background-color: #1945a4;
+}
+.comments__list {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.comment__box {
+  padding: 12px 0;
+  border-bottom: 1px solid #f2f2f2;
+}
+.comment__profile-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+}
+.comment__email {
+  font-weight: 500;
+}
+.comment__date {
+  color: #666;
+}
+.comment__delete {
+  color: #666;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.comment__delete:hover,
+.comment__delete:focus {
+  color: #111
+}
+.commnet__text{
+  font-size: 14px;
+  padding-top: 4px;
+}
+
 /* dark mode */
 .white{
   transition: all .25s linear;
@@ -440,7 +516,8 @@ input:checked + .carousel__slide-container .nav label {
 .dark .post__title,
 .dark .post__author-name,
 .dark .footer__theme-btn,
-.dark .profile__name {
+.dark .profile__name,
+.dark .comments__list {
   color : #fff
 }
 .dark a:hover,
@@ -449,9 +526,15 @@ input:checked + .carousel__slide-container .nav label {
 .dark .post__text--pre-wrap,
 .dark .profile__email,
 .dark .post__date,
-.dark .form__block {
+.dark .form__block,
+.dark .comment__date,
+.dark .comment__delete {
   color: #f2f2f2;
 } 
+.dark .comment__delete:hover,
+.dark .comment__delete:focus {
+  color: #fff
+}
 .dark .form__error {
   color: #ff3535;
 }
