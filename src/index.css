@@ -178,6 +178,14 @@ footer a:hover {
 .post__text--pre-wrap {
   white-space: pre-wrap;
 }
+.post__category{
+  color: #666;
+  border: 1px solid #666;
+  background: #f2f2f2;
+  padding: 0 4px;
+  border-radius: 10px;
+  font-size: 12px;
+}
 
 /* profile */
 .profile__box {
@@ -388,6 +396,13 @@ input:checked + .carousel__slide-container .nav label {
 }
 .form__error {
   color : #ff0000
+} 
+.form select {
+  border: 1px solid #f2f2f2;
+  max-width: 680px;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 0.3rem;
 }
 
 /* loader */
